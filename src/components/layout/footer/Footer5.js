@@ -68,36 +68,35 @@ export default function Footer5() {
                                 </div>
                                 <div className="col-xl-2 col-lg-3 col-sm-6">
                                     <div className="footer-widget">
-                                        <h4 className="fw-title">Information</h4>
+                                        <h4 className="fw-title">Danh mục</h4>
                                         <div className="footer-link-list">
                                             <ul className="list-wrap">
-                                                <li><Link href="/about">Information</Link></li>
-                                                <li><Link href="/about">About us</Link></li>
-                                                <li><Link href="/team">Meet our team</Link></li>
-                                                <li><Link href="/contact">Case stories</Link></li>
-                                                <li><Link href="/blog">Latest news</Link></li>
-                                                <li><Link href="/contact">Contact us</Link></li>
+                                                <li><Link href="/gioi-thieu">Giới thiệu</Link></li>
+                                                <li><Link href="/lien-he">Liên hệ</Link></li>
+                                                <li><Link href="/du-an">Dự án</Link></li>
+                                                <li><Link href="/dich-vu">Dịch vụs</Link></li>
+                                                <li><Link href="https://webdalat.com">Đối tác</Link></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-xl-3 col-lg-4 col-sm-6">
                                     <div className="footer-widget">
-                                        <h4 className="fw-title">Top Links</h4>
+                                        <h4 className="fw-title">Tin tức</h4>
                                         <div className="footer-link-list">
                                             <ul className="list-wrap">
-                                                <li><Link href="/about">How it’s Work</Link></li>
-                                                <li><Link href="/contact">Partners</Link></li>
-                                                <li><Link href="/contact">Testimonials</Link></li>
-                                                <li><Link href="/contact">Case Studies</Link></li>
-                                                <li><Link href="/contact">Pricing</Link></li>
+                                                <li><Link href="/gioi-thieu">Giới thiệu</Link></li>
+                                                <li><Link href="/lien-he">Liên hệ</Link></li>
+                                                <li><Link href="/du-an">Dự án</Link></li>
+                                                <li><Link href="/dich-vu">Dịch vụs</Link></li>
+                                                <li><Link href="https://webdalat.com">Đối tác</Link></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-xl-3 col-lg-4 col-md-6">
                                     <div className="footer-widget">
-                                        <h4 className="fw-title">Instagram Posts</h4>
+                                        <h4 className="fw-title">Đội ngũ kỹ sư IT</h4>
                                         <div className="footer-instagram">
                                             <ul className="list-wrap">
                                                 <li><Link href="#"><img src="/assets/img/images/footer_insta01.jpg" alt="" /></Link></li>

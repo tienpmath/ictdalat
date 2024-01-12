@@ -26,7 +26,7 @@ export default function MobileMenu() {
                 </li>
                 <li><Link href="/gioi-thieu">Giới thiệu</Link></li>
                 <li><Link href="/dich-vu">Dịch vụ</Link></li>
-                <li><Link href="/contact">contacts</Link></li>
+                <li><Link href="/lien-he">contacts</Link></li>
             </ul>
         </>
     )

@@ -32,11 +32,11 @@ export default function TestimonialActiveTwoSlider() {
                             <i className="fas fa-star" />
                             <i className="fas fa-star" />
                         </div>
-                        <p>“ Morem ipsum dolor sit amet, consectetur adipiscing elita florai sum dolor sit amet, consecteture.Borem ipsum dolor sit amet, consectetur adipiscing elita Moremsit amet.</p>
+                        <p>“ Chất lượng tuyệt vời, SEO quá nhanh, phù hợp phát triển thị trường Đà Lạt.</p>
                         <div className="testimonial__bottom">
                             <div className="testimonial__info-three">
-                                <h4 className="title">Mr.Robey Alexa</h4>
-                                <span>CEO, Moie Agency</span>
+                                <h4 className="title">Mr. Kim</h4>
+                                <span>CEO ICT Đà Lạt</span>
                             </div>
                             <div className="testimonial__icon">
                                 <img src="/assets/img/icon/quote02.svg" alt="" />
@@ -53,11 +53,11 @@ export default function TestimonialActiveTwoSlider() {
                             <i className="fas fa-star" />
                             <i className="fas fa-star" />
                         </div>
-                        <p>“ Morem ipsum dolor sit amet, consectetur adipiscing elita florai sum dolor sit amet, consecteture.Borem ipsum dolor sit amet, consectetur adipiscing elita Moremsit amet.</p>
+                        <p>“ Xây dựng thương hiệu đẳng cấp, triển khai nhanh chóng, giá cả phù hợp cho doanh nghiệp vừa, nhỏ, các công ty khởi nghiêp Đà Lạt.</p>
                         <div className="testimonial__bottom">
                             <div className="testimonial__info-three">
-                                <h4 className="title">Kristin Watson</h4>
-                                <span>CEO,JAKS Shans</span>
+                                <h4 className="title">Kỹ sư</h4>
+                                <span>CEO Tiến Dev</span>
                             </div>
                             <div className="testimonial__icon">
                                 <img src="/assets/img/icon/quote02.svg" alt="" />

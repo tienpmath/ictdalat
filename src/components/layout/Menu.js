@@ -9,7 +9,7 @@ export default function Menu() {
                 <li><Link href="/gioi-thieu">Giới thiệu</Link></li>
                 <li><Link href="/dich-vu">Dịch vụ</Link></li>
 
-                <li><Link href="/contact">Liên hệ</Link></li>
+                <li><Link href="/lien-he">Liên hệ</Link></li>
             </ul>
         </>
     )

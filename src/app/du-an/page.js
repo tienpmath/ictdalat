@@ -2,26 +2,26 @@ import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 
 export const metadata = {
-    title: 'Thiết Kế Website Chuyên Nghiệp, Chuẩn SEO Đà Lạt - Lâm Đồng',
-    description: 'ICT Đà Lạt là công ty thiết kế website chuyên nghiệp, uy tín tại Đà Lạt, Bảo Lộc.☎️ 0944838788 Dịch vụ Thiết kế website Đà Lạt - Lâm Đồng trọn gói chuẩn seo  2024✔️✔️ Thiết kế web bán hàng cao cấp, bảo trì trọn đời',
+    title: 'Dự án Thiết Kế Website Chuyên Nghiệp, Chuẩn SEO Đà Lạt - Lâm Đồng',
+    description: 'Dự án thiết kế website chuyên nghiệp, uy tín tại Đà Lạt, Bảo Lộc.☎️ 0944838788 Dịch vụ Thiết kế website Đà Lạt - Lâm Đồng trọn gói chuẩn seo  2024✔️✔️ Thiết kế web bán hàng cao cấp, bảo trì trọn đời',
     openGraph: {
-        title: 'Thiết Kế Website Chuyên Nghiệp, Chuẩn SEO Đà Lạt - Lâm Đồng',
-        description: 'ICT Đà Lạt là công ty thiết kế website chuyên nghiệp, uy tín tại Đà Lạt, Bảo Lộc.☎️ 0944838788 Dịch vụ Thiết kế website Đà Lạt - Lâm Đồng trọn gói chuẩn seo  2024✔️✔️ Thiết kế web bán hàng cao cấp, bảo trì trọn đời',
+        title: 'Dự án Website Chuyên Nghiệp, Chuẩn SEO Đà Lạt - Lâm Đồng',
+        description: 'Dự án thiết kế website chuyên nghiệp, uy tín tại Đà Lạt, Bảo Lộc.☎️ 0944838788 Dịch vụ Thiết kế website Đà Lạt - Lâm Đồng trọn gói chuẩn seo  2024✔️✔️ Thiết kế web bán hàng cao cấp, bảo trì trọn đời',
     },
 }
 
-export default function Project() {
+export default function DuAn() {
     return (
         <>
-            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="All Services" headTitle="" transparent="">
+            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle='DỊCH VỤ CỦA CHÚNG TÔI' headTitle='DỊCH VỤ CỦA CHÚNG TÔI' transparent=''>
                 <section className="services__area-seven services__bg-seven" data-background="/assets/img/bg/h5_services_bg.jpg">
                     <div className="container">
                         <div className="row justify-content-center">
                             <div className="col-lg-7">
                                 <div className="section-title text-center mb-50">
-                                    <span className="sub-title">WHAT WE OFFER</span>
-                                    <h2 className="title">We Do World Class Work For You</h2>
-                                    <p>Mauris ut enim sit amet lacus ornare ullamcorper Praesent plaacerat <br /> neque eu purus rhoncus vel tincidunt odio ultrices.</p>
+                                    <span className="sub-title">DỊCH VỤ CỦA CHÚNG TÔI</span>
+                                    <h2 className="title">SÁNG TẠO, THÂN THIỆN VÀ HIỆU QUẢ!</h2>
+                                    <p>Bằng cách tiếp cận sáng tạo được kết hợp công nghệ tiên phong và chất lượng quản lý tiêu chuẩn cao, Cánh Cam sẽ gieo sự tự tin vào trang web để bạn thực sự tỏa sáng khi đạt mục tiêu tăng doanh thu lẫn mức độ nhận biết.</p>
                                 </div>
                             </div>
                         </div>
@@ -49,9 +49,9 @@ export default function Project() {
                                         </div>
                                     </div>
                                     <div className="services__content-five">
-                                        <h2 className="title"><Link href="/services-details">Marketing Plan</Link></h2>
-                                        <p>Beauis utter enim amet lacus ornare ullamcorper Praesent neque purus rhoncus.</p>
-                                        <Link href="/services-details" className="btn">Read More</Link>
+                                        <h2 className="title"><Link href="/services-details">THẢO LUẬN VỀ DỰ ÁN</Link></h2>
+                                        <p>Thấu hiểu nhanh, hành động kịp thời.</p>
+                                        <Link href="/contact" className="btn">Liên hệ</Link>
                                     </div>
                                 </div>
                             </div>
@@ -78,9 +78,9 @@ export default function Project() {
                                         </div>
                                     </div>
                                     <div className="services__content-five">
-                                        <h2 className="title"><Link href="/services-details">Idea Development</Link></h2>
-                                        <p>Beauis utter enim amet lacus ornare ullamcorper Praesent neque purus rhoncus.</p>
-                                        <Link href="/services-details" className="btn">Read More</Link>
+                                        <h2 className="title"><Link href="/services-details">THIẾT KẾ WEBSITE</Link></h2>
+                                        <p>Thiết kế Website ấn tượng, an toàn, tối ưu hóa chuẩn SEO…</p>
+                                        <Link href="/contact" className="btn">Liên hệ</Link>
                                     </div>
                                 </div>
                             </div>
@@ -107,9 +107,9 @@ export default function Project() {
                                         </div>
                                     </div>
                                     <div className="services__content-five">
-                                        <h2 className="title"><Link href="/services-details">SEO Consulting</Link></h2>
-                                        <p>Beauis utter enim amet lacus ornare ullamcorper Praesent neque purus rhoncus.</p>
-                                        <Link href="/services-details" className="btn">Read More</Link>
+                                        <h2 className="title"><Link href="/services-details">THIẾT KẾ THƯƠNG HIỆU</Link></h2>
+                                        <p>Thiết kế các ấn phẩm đồ họa, nhận diện thương hiệu…</p>
+                                        <Link href="/contact" className="btn">Liên hệ</Link>
                                     </div>
                                 </div>
                             </div>
@@ -136,9 +136,9 @@ export default function Project() {
                                         </div>
                                     </div>
                                     <div className="services__content-five">
-                                        <h2 className="title"><Link href="/services-details">Target Audience</Link></h2>
-                                        <p>Beauis utter enim amet lacus ornare ullamcorper Praesent neque purus rhoncus.</p>
-                                        <Link href="/services-details" className="btn">Read More</Link>
+                                        <h2 className="title"><Link href="/services-details">DỊCH VỤ SEO</Link></h2>
+                                        <p>Chiến lược SEO toàn diện, tối ưu hóa, đạt hiệu quả…</p>
+                                        <Link href="/contact" className="btn">Liên hệ</Link>
                                     </div>
                                 </div>
                             </div>
@@ -165,9 +165,9 @@ export default function Project() {
                                         </div>
                                     </div>
                                     <div className="services__content-five">
-                                        <h2 className="title"><Link href="/services-details">Business Investment</Link></h2>
-                                        <p>Beauis utter enim amet lacus ornare ullamcorper Praesent neque purus rhoncus.</p>
-                                        <Link href="/services-details" className="btn">Read More</Link>
+                                        <h2 className="title"><Link href="/services-details">QUẢNG CAO ĐA NỀN TẢNG</Link></h2>
+                                        <p>Chạy quảng cáo đa nền tảng, Đưa các chiến lược phù hợp</p>
+                                        <Link href="/contact" className="btn">Liên hệ</Link>
                                     </div>
                                 </div>
                             </div>
@@ -194,9 +194,12 @@ export default function Project() {
                                         </div>
                                     </div>
                                     <div className="services__content-five">
-                                        <h2 className="title"><Link href="/services-details">Project Management</Link></h2>
-                                        <p>Beauis utter enim amet lacus ornare ullamcorper Praesent neque purus rhoncus.</p>
-                                        <Link href="/services-details" className="btn">Read More</Link>
+                                        <h2 className="title"><Link href="/services-details">Tiếp Nhận Thông Tin</Link></h2>
+                                        <p>Trao đổi tiếp nhận thông tin
+                                            Quý khách hàng cung cấp thông tin bằng cách điền form trên website hoặc gửi qua Zalo.
+
+                                        </p>
+                                        <Link href="/contact" className="btn">Liên hệ</Link>
                                     </div>
                                 </div>
                             </div>
@@ -223,9 +226,11 @@ export default function Project() {
                                         </div>
                                     </div>
                                     <div className="services__content-five">
-                                        <h2 className="title"><Link href="/services-details">Business Development</Link></h2>
-                                        <p>Beauis utter enim amet lacus ornare ullamcorper Praesent neque purus rhoncus.</p>
-                                        <Link href="/services-details" className="btn">Read More</Link>
+                                        <h2 className="title"><Link href="/services-details">Đề xuất các gói giải pháp phù hợp</Link></h2>
+                                        <p>Chúng tôi lập kế hoạch từ khóa tìm kiếm, đề xuất các gói giải pháp quảng cáo phù hợp ngân sách và nhu cầu
+
+                                        </p>
+                                        <Link href="/contact" className="btn">Liên hệ</Link>
                                     </div>
                                 </div>
                             </div>
@@ -252,9 +257,9 @@ export default function Project() {
                                         </div>
                                     </div>
                                     <div className="services__content-five">
-                                        <h2 className="title"><Link href="/services-details">Finance Investment</Link></h2>
-                                        <p>Beauis utter enim amet lacus ornare ullamcorper Praesent neque purus rhoncus.</p>
-                                        <Link href="/services-details" className="btn">Read More</Link>
+                                        <h2 className="title"><Link href="/services-details">Marketing đa lĩnh vực, đa ngành nghề</Link></h2>
+                                        <p>Đội ngũ kỹ thuật giàu kinh nghiệm, chạy tốt tất cả mọi các lĩnh vực, ngành nghề.</p>
+                                        <Link href="/contact" className="btn">Liên hệ</Link>
                                     </div>
                                 </div>
                             </div>

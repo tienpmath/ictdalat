@@ -62,7 +62,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, transp
                                                         </svg>
                                                     </a>
                                                 </li>
-                                                <li className="header-btn"><Link href="/contact" className="btn">let’s Talk</Link></li>
+                                                <li className="header-btn"><Link href="/contact" className="btn">0944838788</Link></li>
                                             </ul>
                                         </div>
                                         <div className="mobile-nav-toggler" onClick={handleMobileMenu}>

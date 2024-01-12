@@ -25,6 +25,7 @@ export const metadata = {
     openGraph: {
         title: 'Thiết Kế Website Chuyên Nghiệp, Chuẩn SEO Đà Lạt - Lâm Đồng',
         description: 'ICT Đà Lạt chuyên thiết kế website chuyên nghiệp, uy tín tại Đà Lạt, Bảo Lộc.☎️ 0944838788 Dịch vụ Thiết kế website Đà Lạt - Lâm Đồng trọn gói chuẩn seo  2024✔️✔️ Thiết kế web bán hàng cao cấp, bảo trì trọn đời',
+        images: '/logo.png',
     },
 }
 

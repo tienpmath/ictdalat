@@ -18,7 +18,7 @@ export async function generateMetadata(
     const id = params.slug
 
     // fetch data
-    const product = await fetch(`https://api.ictdalat.vn/api/Portfolio/GetDetail/${id}`).then((res) => res.json())
+    const product = await fetch(`https://admin.ictdalat.vn/api/Portfolio/GetDetailBy/${id}`).then((res) => res.json())
 
     // optionally access and extend (rather than replace) parent metadata
     const previousImages = (await parent).openGraph?.images || []
@@ -44,7 +44,7 @@ const ProjectDetail = async (props: any) => {
 
     //console.log(id);
     const res = await fetch(
-        `https://api.ictdalat.vn/api/Portfolio/GetDetail/${id}`,
+        `https://admin.ictdalat.vn/api/Portfolio/GetDetailBy/${id}`,
         {
             method: "GET",
             // next: { tags: ['project-detail'] }
@@ -53,7 +53,7 @@ const ProjectDetail = async (props: any) => {
     );
 
     const data = await res.json();
-    // console.log(data);
+    //console.log(data);
     const jsonLd = {
         '@context': 'https://schema.org',
         '@type': 'Product',

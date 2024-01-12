@@ -11,7 +11,7 @@ export default function Footer1() {
                                 <div className="col-xl-3 col-lg-4 col-md-6">
                                     <div className="footer-widget">
                                         <div className="fw-logo mb-25">
-                                            <Link href="/"><img src="/assets/img/logo/logo.png" alt="" /></Link>
+                                            <Link href="/"><img src="/assets/img/logo/logo.png" alt="ICT Đà Lạt" /></Link>
                                         </div>
                                         <div className="footer-content">
                                             <p>Công ty Thiết kế website, phần mềm - cài đặt hỗ trợ, dịch vụ sửa chữa, vệ sinh máy tính, khôi phục dữ liệu...</p>
@@ -62,14 +62,14 @@ export default function Footer1() {
                                 </div>
                                 <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                                     <div className="footer-widget">
-                                        <h4 className="fw-title">Top Links</h4>
+                                        <h4 className="fw-title">Danh mục ICT</h4>
                                         <div className="footer-link-list">
                                             <ul className="list-wrap">
-                                                <li><Link href="/about">How it’s Work</Link></li>
-                                                <li><Link href="/contact">Partners</Link></li>
-                                                <li><Link href="/contact">Testimonials</Link></li>
-                                                <li><Link href="/contact">Case Studies</Link></li>
-                                                <li><Link href="/contact">Pricing</Link></li>
+                                                <li><Link href="/gioi-thieu">Giới thiệu</Link></li>
+                                                <li><Link href="/lien-he">Liên hệ</Link></li>
+                                                <li><Link href="/du-an">Dự án</Link></li>
+                                                <li><Link href="/dich-vu">Dịch vụs</Link></li>
+                                                <li><Link href="https://webdalat.com">Đối tác</Link></li>
                                             </ul>
                                         </div>
                                     </div>
