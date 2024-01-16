@@ -70,13 +70,11 @@ export default function Contact() {
                                         <h2 className="title">Gửi Yêu cầu</h2>
                                         <p>Vui lòng nhập chính xác thông tin để liên hệ *</p>
                                         <form id="contact-form" action={addQuery} method="POST">
-                                            <div className="form-grp">
-                                                <textarea name="subject" placeholder="Message" required />
-                                            </div>
+
                                             <div className="row">
                                                 <div className="col-md-4">
                                                     <div className="form-grp">
-                                                        <input type="text" name="fullName" placeholder="Name" required />
+                                                        <input type="text" name="fullName" placeholder="Họ và tên" required />
                                                     </div>
                                                 </div>
                                                 <div className="col-md-4">
@@ -86,14 +84,20 @@ export default function Contact() {
                                                 </div>
                                                 <div className="col-md-4">
                                                     <div className="form-grp">
-                                                        <input type="number" name="phone" placeholder="Phone" required />
+                                                        <input type="number" name="phone" placeholder="Số điện thoại" required />
                                                     </div>
+                                                </div>
+                                                <div className="form-grp">
+                                                    <input type="text" name="subject" placeholder="Tiêu đề" required />
+                                                </div>
+                                                <div className="form-grp">
+                                                    <textarea name="messageBody" placeholder="Nội dung" required />
                                                 </div>
                                             </div>
                                             {/* <div className="form-grp checkbox-grp">
-                                                <input type="checkbox" name="checkbox" id="checkbox" />
-                                                <label htmlFor="checkbox">Save my name, email, and website in this browser for the next time I comment.</label>
-                                            </div> */}
+    <input type="checkbox" name="checkbox" id="checkbox" />
+    <label htmlFor="checkbox">Save my name, email, and website in this browser for the next time I comment.</label>
+</div> */}
                                             <button type="submit" className="btn">Gửi yêu cầu </button>
                                         </form>
                                         <p className="ajax-response mb-0" />

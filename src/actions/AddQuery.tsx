@@ -9,16 +9,17 @@ export async function addQuery(formData: FormData) {
     const email = formData.get('email');
     const subject = formData.get('subject');
     const phone = formData.get('phone');
+    const messageBody = formData.get('messageBody');
     // console.log(fullName);
 
     // console.log(JSON.stringify({ fullName: fullName, email: email, messageBody: subject, phone: phone, subject: fullName }));
 
-    const response = await fetch(`http://localhost:5051/api/ContactQuery`, {
+    const response = await fetch(`https://api.ictdalat.vn/api/ContactQuery`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ fullName: fullName, email: email, messageBody: subject, phone: phone, subject: fullName }),
+        body: JSON.stringify({ fullName: fullName, email: email, phone: phone, subject: subject, messageBody: messageBody }),
     });
     const result = await response.json();
 

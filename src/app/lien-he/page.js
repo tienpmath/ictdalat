@@ -70,13 +70,11 @@ export default function LienHe() {
                                         <h2 className="title">Gửi Yêu cầu</h2>
                                         <p>Vui lòng nhập chính xác thông tin để liên hệ *</p>
                                         <form id="contact-form" action={addQuery} method="POST">
-                                            <div className="form-grp">
-                                                <textarea name="subject" placeholder="Message" required />
-                                            </div>
+
                                             <div className="row">
                                                 <div className="col-md-4">
                                                     <div className="form-grp">
-                                                        <input type="text" name="fullName" placeholder="Name" required />
+                                                        <input type="text" name="fullName" placeholder="Họ và tên" required />
                                                     </div>
                                                 </div>
                                                 <div className="col-md-4">
@@ -88,6 +86,12 @@ export default function LienHe() {
                                                     <div className="form-grp">
                                                         <input type="number" name="phone" placeholder="Phone" required />
                                                     </div>
+                                                </div>
+                                                <div className="form-grp">
+                                                    <input type="text" name="subject" placeholder="Tiêu đề" required />
+                                                </div>
+                                                <div className="form-grp">
+                                                    <textarea name="messageBody" placeholder="Nội dung" required />
                                                 </div>
                                             </div>
                                             {/* <div className="form-grp checkbox-grp">
