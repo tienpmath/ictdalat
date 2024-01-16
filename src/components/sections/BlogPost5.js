@@ -10,7 +10,7 @@ const BlogPost5 = async () => {
         `https://api.ictdalat.vn/api/Portfolio`,
         {
             method: "GET",
-            cache: 'no-store'
+            next: { revalidate: 10000 }
         }
     );
     //const total_items = +(res.headers?.get("X-Total-Count") ?? 0)
