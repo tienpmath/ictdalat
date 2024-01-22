@@ -10,9 +10,10 @@ const BlogPost5 = async () => {
         `https://api.ictdalat.vn/api/Portfolio`,
         {
             method: "GET",
-            next: { revalidate: 10000 }
+            next: { tags: ['list-portfolio'] }
         }
     );
+    revalidateTag("list-portfolio");
     //const total_items = +(res.headers?.get("X-Total-Count") ?? 0)
     const data = await res.json();
     //console.log(data);
