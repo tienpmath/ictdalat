@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-
+import { revalidateTag } from 'next/cache'
 const BlogPost5 = async () => {
 
 
