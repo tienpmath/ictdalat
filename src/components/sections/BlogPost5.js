@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { revalidateTag } from 'next/cache'
+
 const BlogPost5 = async () => {
 
 
@@ -10,10 +10,9 @@ const BlogPost5 = async () => {
         `https://api.ictdalat.vn/api/Portfolio`,
         {
             method: "GET",
-            next: { tags: ['list-portfolio'] }
+            cache: 'no-store'
         }
     );
-    revalidateTag("list-portfolio");
     //const total_items = +(res.headers?.get("X-Total-Count") ?? 0)
     const data = await res.json();
     //console.log(data);
@@ -36,7 +35,7 @@ const BlogPost5 = async () => {
                                 <div className="blog__post-four shine-animate-item">
                                     <div className="blog__post-thumb-four">
 
-                                        <Link href={"du-an/" + item.slug} className="shine-animate">
+                                        <Link href={"du-an/" + item.id} className="shine-animate">
 
                                             <Image
                                                 src={"https://admin.ictdalat.vn/" + item.image}
@@ -48,11 +47,11 @@ const BlogPost5 = async () => {
                                     </div>
                                     <div className="blog__post-content-four">
                                         <Link href="/du-an" className="blog__post-tag-three">Business</Link>
-                                        <h2 className="title"><Link href={"/du-an/" + item.slug}>{item.name}</Link></h2>
+                                        <h2 className="title"><Link href={"/du-an/" + item.id}>{item.name}</Link></h2>
                                         <div className="blog-post-meta blog-post-meta-two">
                                             <ul className="list-wrap">
                                                 <li><i className="fas fa-calendar-alt" />Oct 21, 2024</li>
-                                                <li><i className="far fa-comment-alt" /><Link href={"/du-an/" + item.slug}>02 Comments</Link></li>
+                                                <li><i className="far fa-comment-alt" /><Link href={"/du-an/" + item.id}>02 Comments</Link></li>
                                             </ul>
                                         </div>
                                     </div>
