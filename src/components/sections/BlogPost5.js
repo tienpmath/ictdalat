@@ -1,7 +1,21 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { revalidateTag } from 'next/cache'
+
+
 const BlogPost5 = async () => {
+
+    //     const [users, setUsers] = useState([]);
+
+    //   useEffect(() => {
+    //     const fetchUsers = async () => {
+    //       const response = await fetch("https://api.ictdalat.vn/api/Portfolio");
+    //       const data = await response.json();
+    //       setUsers(data);
+    //     };
+
+    //     fetchUsers();
+    //   }, []);
 
 
     //  const slug = props;
@@ -10,10 +24,11 @@ const BlogPost5 = async () => {
         `https://api.ictdalat.vn/api/Portfolio`,
         {
             method: "GET",
-            next: { revalidate: 0 }, // Revalidate every 60 seconds
+            next: { tags: ['collection'], revalidate: 60, }, // Revalidate every 60 seconds
+
         }
     );
-    
+
     //const total_items = +(res.headers?.get("X-Total-Count") ?? 0)
     const data = await res.json();
     //console.log(data);
