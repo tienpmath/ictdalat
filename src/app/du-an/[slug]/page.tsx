@@ -2,6 +2,7 @@ import Layout from "@/components/layout/Layout"
 import ProjectForm from "@/components/project/ProjectForm";
 import Link from "next/link"
 import Image from 'next/image'
+import { revalidateTag } from 'next/cache'
 
 import type { Metadata, ResolvingMetadata } from 'next'
 
@@ -17,9 +18,22 @@ export async function generateMetadata(
     // read route params
     const id = params.slug
 
-    // fetch data
-    const product = await fetch(`https://api.ictdalat.vn/api/Portfolio/GetDetailBy/${id}`, { next: { revalidate: 10000 } },
-    ).then((res) => res.json())
+    const res = await fetch(
+        `https://api.ictdalat.vn/api/Portfolio/GetDetailBy/${id}`,
+        {
+            method: "GET",
+            next: { tags: ['collectionDetail'], revalidate: 60, },
+
+        }
+    );
+
+
+    //const total_items = +(res.headers?.get("X-Total-Count") ?? 0)
+    const product = await res.json();
+
+    // // fetch data
+    // const product = await fetch(`https://api.ictdalat.vn/api/Portfolio/GetDetailBy/${id}`, { next: { tags: ['detail-portfolio'] } },
+    // ).then((res) => res.json())
 
     // optionally access and extend (rather than replace) parent metadata
     const previousImages = (await parent).openGraph?.images || []
@@ -41,17 +55,15 @@ const ProjectDetail = async (props: any) => {
 
     // console.log(slug);
     const id = props.params.slug;
-
-
-    //console.log(id);
     const res = await fetch(
         `https://api.ictdalat.vn/api/Portfolio/GetDetailBy/${id}`,
         {
             method: "GET",
-            next: { revalidate: 10000 }
-        },
+            next: { tags: ['collectionDetail1'] }, // Revalidate every 60 seconds
+        }
     );
 
+    //const total_items = +(res.headers?.get("X-Total-Count") ?? 0)
     const data = await res.json();
     //console.log(data);
     const jsonLd = {
